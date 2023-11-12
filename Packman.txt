@@ -1,0 +1,7 @@
+0: Represents a blank space or an empty block on the board.
+1: Represents a block with food that can be eaten by Pac-Man.
+2: Represents a block with a super food that can be eaten by Pac-Man to give him temporary invincibility.
+3: Represents the starting location of Pac-Man on the board.
+10: Represents a wall or an obstacle that Pac-Man can't pass through.
+11: Represents the location of one of the four ghosts on the board.
+15: Represents the location of one of the four power-ups that turn Pac-Man into a super Pac-Man, able to eat ghosts.
