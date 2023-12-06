@@ -10,32 +10,28 @@ namespace Pacman
         public static Pacman pacman = new Pacman();
         public static Ghost ghost = new Ghost();
         public static Player player = new Player();
-        public static HighScore highscore = new HighScore();
         private static FormElements formelements = new FormElements();
 
         public Form1()
         {
             InitializeComponent();
-            SetupGame(1);
+            SetupGame();
         }
 
-        public void SetupGame(int Level)
+        public void SetupGame()
         {
             // Create Game Board
-            gameboard.CreateBoardImage(this, Level);
+            gameboard.CreateBoardImage(this);
 
             // Create Board Matrix
-            Tuple<int, int> PacmanStartCoordinates = gameboard.InitialiseBoardMatrix(Level);
+            Tuple<int, int> PacmanStartCoordinates = gameboard.InitialiseBoardMatrix();
 
             // Create Player
-            player.CreatePlayerDetails(this);
+            player.CreatePlayerScore(this);
             player.CreateLives(this);
 
             // Create Form Elements
-            formelements.CreateFormElements(this);
-
-            // Create High Score
-            highscore.CreateHighScore(this);
+            formelements.CreateFormScoreLabel(this);
 
             // Create Food
             food.CreateFoodImages(this);

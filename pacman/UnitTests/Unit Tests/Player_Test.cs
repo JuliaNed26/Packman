@@ -11,7 +11,7 @@ namespace Pacman
         public Player_Test()
         {
             Form form = new Form();
-            player.CreatePlayerDetails(form);
+            player.CreatePlayerScore(form);
             player.CreateLives(form);
         }
 

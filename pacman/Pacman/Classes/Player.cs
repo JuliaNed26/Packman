@@ -26,7 +26,7 @@ namespace Pacman
             SetLives();
         }
 
-        public void CreatePlayerDetails(Form formInstance)
+        public void CreatePlayerScore(Form formInstance)
         {
             // Create Score label
             ScoreText.ForeColor = System.Drawing.Color.White;
@@ -45,7 +45,6 @@ namespace Pacman
             // Update score value and text
             Score += amount;
             ScoreText.Text = Score.ToString();
-            if (Score > Form1.highscore.Score) { Form1.highscore.UpdateHighScore(Score); }
         }
 
         public void SetLives()
